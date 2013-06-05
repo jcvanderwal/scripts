@@ -1,0 +1,1 @@
+https://repository.apache.org/content/repositories/orgapacheisis-065/org/apache/isis/archetype/quickstart_wicket_restful_jdo-archetype/1.0.0/quickstart_wicket_restful_jdo-archetype-1.0.0-source-release.zip
