@@ -1,0 +1,2 @@
+http://repository.apache.org/content/repositories/orgapacheisis-1036/org/apache/isis/core/isis/1.10.0/isis-1.10.0-source-release.zip
+http://repository.apache.org/content/repositories/orgapacheisis-1036/org/apache/isis/archetype/simpleapp-archetype/1.10.0/simpleapp-archetype-1.10.0-source-release.zip

@@ -6,13 +6,11 @@
 # TODO: enhance this script so it will stop when something is broken
 
 _download(){
-	files=( `cat "*.txt" `)
-	for fil in "${files[@]}"
-	do
-		echo 'Downloading '$fil
-		curl -O $fil
-		curl -O $fil.asc
-	done
+    while read fil; do
+        echo 'Downloading '$fil
+        curl -O $fil
+        curl -O $fil.asc
+    done <release.txt
 }
 
 _verify(){
