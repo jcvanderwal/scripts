@@ -24,10 +24,10 @@ EOF
 _download(){
     while read fil; do
         echo 'Downloading '$fil
-        #curl -O $fil
-        #curl -O $fil.asc
-        wget $fil
-        wget $fil.asc
+        curl -L -O $fil
+        curl -L -O $fil.asc
+        #wget $fil
+        #wget $fil.asc
     done <$FILE
 }
 
@@ -55,7 +55,6 @@ _build(){
         then
             cd $module
             echo 'Building Core '$module
-            mvn dependency:resolve
             mvn clean install -o
             cd ..
         else
