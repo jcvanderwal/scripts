@@ -36,6 +36,6 @@ git commit -am "$JIRA: bumping to version $VERSION" || exit 1
 if [[ $VERSION != *"SNAPSHOT"* ]]; then
     echo "Tagging"
     git tag $VERSION || exit 1 
-    git tag latest || exit 1
+    git tag --force latest || exit 1
 fi
 
